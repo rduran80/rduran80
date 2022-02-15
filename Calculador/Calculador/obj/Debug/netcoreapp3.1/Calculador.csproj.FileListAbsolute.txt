@@ -1,0 +1,14 @@
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\bin\Debug\netcoreapp3.1\Calculador.exe
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\bin\Debug\netcoreapp3.1\Calculador.deps.json
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\bin\Debug\netcoreapp3.1\Calculador.runtimeconfig.json
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\bin\Debug\netcoreapp3.1\Calculador.runtimeconfig.dev.json
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\bin\Debug\netcoreapp3.1\Calculador.dll
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\bin\Debug\netcoreapp3.1\Calculador.pdb
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\obj\Debug\netcoreapp3.1\Calculador.csproj.AssemblyReference.cache
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\obj\Debug\netcoreapp3.1\Calculador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\obj\Debug\netcoreapp3.1\Calculador.AssemblyInfoInputs.cache
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\obj\Debug\netcoreapp3.1\Calculador.AssemblyInfo.cs
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\obj\Debug\netcoreapp3.1\Calculador.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\obj\Debug\netcoreapp3.1\Calculador.dll
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\obj\Debug\netcoreapp3.1\Calculador.pdb
+C:\Users\USUARIO\source\repos\TecnicasProgramacion\Calculador\Calculador\obj\Debug\netcoreapp3.1\Calculador.genruntimeconfig.cache
