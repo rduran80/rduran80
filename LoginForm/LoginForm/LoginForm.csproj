@@ -67,44 +67,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="catalogoArticulos.aspx" />
-    <Content Include="catalogoUsuarios.aspx" />
-    <Content Include="contacto.aspx" />
+    <Content Include="catalogos\catalogoArticulos.aspx" />
+    <Content Include="catalogos\catalogoUsuarios.aspx" />
+    <Content Include="catalogos\contacto.aspx" />
     <Content Include="images\fondoTech4.jpg" />
-    <Content Include="login.aspx" />
+    <Content Include="catalogos\login.aspx" />
     <Content Include="css\menucircular.css" />
     <Content Include="css\style.css" />
     <Content Include="images\fondoAzul3.jpg" />
-    <Content Include="menuPrincipal.aspx" />
+    <Content Include="catalogos\menuPrincipal.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="catalogoArticulos.aspx.cs">
+    <Compile Include="catalogos\catalogoArticulos.aspx.cs">
       <DependentUpon>catalogoArticulos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="catalogoArticulos.aspx.designer.cs">
+    <Compile Include="catalogos\catalogoArticulos.aspx.designer.cs">
       <DependentUpon>catalogoArticulos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="catalogoUsuarios.aspx.cs">
+    <Compile Include="catalogos\catalogoUsuarios.aspx.cs">
       <DependentUpon>catalogoUsuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="catalogoUsuarios.aspx.designer.cs">
+    <Compile Include="catalogos\catalogoUsuarios.aspx.designer.cs">
       <DependentUpon>catalogoUsuarios.aspx</DependentUpon>
     </Compile>
-    <Compile Include="contacto.aspx.cs">
+    <Compile Include="catalogos\contacto.aspx.cs">
       <DependentUpon>contacto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="contacto.aspx.designer.cs">
+    <Compile Include="catalogos\contacto.aspx.designer.cs">
       <DependentUpon>contacto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="login.aspx.cs">
+    <Compile Include="catalogos\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="login.aspx.designer.cs">
+    <Compile Include="catalogos\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="menuPrincipal.Master.cs">
@@ -114,11 +114,11 @@
     <Compile Include="menuPrincipal.Master.designer.cs">
       <DependentUpon>menuPrincipal.Master</DependentUpon>
     </Compile>
-    <Compile Include="menuPrincipal.aspx.cs">
+    <Compile Include="catalogos\menuPrincipal.aspx.cs">
       <DependentUpon>menuPrincipal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="menuPrincipal.aspx.designer.cs">
+    <Compile Include="catalogos\menuPrincipal.aspx.designer.cs">
       <DependentUpon>menuPrincipal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -134,7 +134,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="catalogos\" />
     <Folder Include="masterPages\" />
     <Folder Include="menu\" />
   </ItemGroup>

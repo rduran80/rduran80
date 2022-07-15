@@ -6,15 +6,15 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <link rel="stylesheet" type="text/css" href="css/menucircular.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/menucircular.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <a href="login.aspx">
+                <a href="login.aspx">
                 <svg class="login" version="1.0" xmlns="http://www.w3.org/2000/svg"
                     width="30pt" height="30pt" viewBox=" -30 -200 300 300"
                     preserveAspectRatio="xMidYMid meet">
@@ -104,7 +104,7 @@
             </div>
             <div class="pie pie2" onclick="document.body.classList.remove('active')">
                 <div class="pie-color pie-color2">
-                    <a href="catalogoUsuarios.aspx">
+                        <a href="catalogoUsuarios.aspx">
                         <svg class="discount" version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="60pt" height="60pt" viewBox="0 0 550 500"
                             preserveAspectRatio="xMidYMid meet">
@@ -128,37 +128,7 @@
             </div>
             <div class="pie pie3" onclick="document.body.classList.remove('active')">
                 <div class="pie-color pie-color3">
-                    <a href="catalogoArticulos.aspx">
-                        <svg class="cart" version="1.0" xmlns="http://www.w3.org/2000/svg"
-                            width="60pt" height="60pt" viewBox="0 0 500 500"
-                            preserveAspectRatio="xMidYMid meet">
-
-                            <g transform="translate(0,100) scale(0.100000,-0.100000)"
-                                fill="#000000" stroke="none">
-                                <path d="M63 5050 c-68 -41 -63 175 -63 -2492 0 -2376 0 -2413 20 -2445 40
-                                -66 14 -64 703 -61 l622 3 1835 673 c1009 371 1849 681 1867 689 37 17 62 52
-                                70 96 7 47 -357 1040 -396 1080 -57 58 -48 60 -694 -177 -323 -119 -591 -216
-                                -595 -216 -4 0 213 220 481 488 l487 488 0 54 0 54 -397 398 c-317 317 -404
-                                399 -429 404 -77 14 -72 19 -572 -480 -260 -259 -469 -460 -464 -446 6 14 123
-                                293 261 620 268 636 273 649 230 704 -28 36 -30 37 -560 260 -283 119 -480
-                                196 -499 196 -18 0 -47 -9 -65 -20 -38 -24 -25 6 -341 -745 l-219 -520 -5 665
-                                c-5 723 -3 694 -63 730 -31 19 -55 20 -607 20 -553 0 -576 -1 -607 -20z m1027
-                                -2490 l0 -2260 -420 0 -420 0 0 2260 0 2260 420 0 420 0 0 -2260z m1309 1941
-                                c194 -82 355 -152 358 -155 3 -3 -313 -763 -703 -1687 l-709 -1682 -3 1009 -2
-                                1009 347 827 c192 455 350 828 353 828 3 0 165 -67 359 -149z m386 -2585
-                                c-726 -723 -1321 -1313 -1322 -1312 -1 1 178 429 398 951 l400 950 642 643
-                                642 642 280 -281 280 -280 -1320 -1313z m1913 58 c74 -201 132 -368 129 -370
-                                -7 -7 -3140 -1154 -3143 -1151 -2 2 293 299 654 660 l657 657 775 285 c426
-                                156 780 284 785 284 6 0 70 -164 143 -365z" />
-                                <path d="M632 810 c-121 -28 -181 -173 -111 -274 84 -123 274 -95 319 48 41
-127 -77 255 -208 226z" />
-                            </g>
-                        </svg></a>
-                </div>
-            </div>
-            <div class="pie pie3" onclick="document.body.classList.remove('active')">
-                <div class="pie-color pie-color3">
-                    <a href="catalogoArticulos.aspx">
+                     <a href="catalogoArticulos.aspx">
                         <svg class="cart" version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="60pt" height="60pt" viewBox="0 0 500 500"
                             preserveAspectRatio="xMidYMid meet">
