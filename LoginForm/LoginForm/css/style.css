@@ -1,0 +1,90 @@
+body {
+	margin: 10px;
+	padding: 10px;
+	background-image: url('../images/fondoTech4.jpg');
+	background-size: 100%;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
+
+div{
+	border: blue;
+	border-style: solid;
+	border-radius: 20px;
+	width: 100%;
+}
+
+.div{
+	padding: 20px;
+	text-align: center;
+	color: #ffd800;
+	margin: 20px;
+}
+
+.div-login {
+	width: 50%;
+	margin: 0 auto;
+	font-size:20px;
+
+
+}
+
+.btn {
+	color: lawngreen;
+	background-color: #0026ff;
+	border-radius: 10px;
+	border-color: transparent;
+	}
+
+.btn:hover{
+	color: #fff;
+    background-color: #5a6268;
+}
+
+footer {
+	color: white;
+	font-size: 25px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+}
+
+fieldset {
+	text-align: left;
+	width: 95%
+}
+
+
+.txtbox {
+	background-color:darkgray;
+	border-radius: 5px;
+}
+
+img {
+	position: center;
+	resize: block;
+	width: 100%;
+	height: 100%;
+}
+
+.grid-container {
+	display: grid;
+	column-gap: 50px;
+	grid-template-columns: auto auto auto;
+	background-color: #2196F3;
+	margin: 0 auto;
+}
+
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
