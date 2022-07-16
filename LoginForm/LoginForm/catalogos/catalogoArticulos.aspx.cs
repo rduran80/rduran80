@@ -42,22 +42,23 @@ namespace LoginForm
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
-
+            SqlDataSource1.Insert();
         }
 
         protected void btnBorrar_Click(object sender, EventArgs e)
         {
-
+            SqlDataSource1.Delete();
         }
 
         protected void btnActualizar_Click(object sender, EventArgs e)
         {
-
+            SqlDataSource1.Update();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
+            ClsArticulo articulo = new ClsArticulo();
+            ClsArticulo.SelectWithParams();
         }
     }
 }

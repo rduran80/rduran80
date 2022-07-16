@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
@@ -20,7 +23,7 @@ namespace LoginForm
         public ClsArticulo(int Codigo, string Descripcion, int Cantidad, float Precio, DateTime FechaIngreso)
         {
             codigo = Codigo;
-            descripcion = Descripcion;
+            descripcion = Descripcion; 
             cantidad = Cantidad;
             precio = Precio;
             fechaIngreso = FechaIngreso;
@@ -55,6 +58,31 @@ namespace LoginForm
         public static void SetFechaIngreso(DateTime FechaIngreso)
         {
             fechaIngreso = FechaIngreso;
+        }
+
+        public static void SelectWithParams() 
+        {
+            string constr = ConfigurationManager.ConnectionStrings["UPIConnectionString2"].ConnectionString;
+            string query = "select * from articulos where codigo = @codigo";
+            using (SqlConnection con = new SqlConnection(constr))
+            {
+                using (SqlCommand cmd = new SqlCommand(query))
+                {
+                    using (SqlDataAdapter sda = new SqlDataAdapter())
+                    {
+                        cmd.Connection = con;
+                        sda.SelectCommand = cmd;
+                        using (DataSet ds = new DataSet())
+                        {
+                            sda.Fill(ds);
+                            //GridView.DataSource = ds.Tables[0];
+                            //GridView.DataBind();
+
+                        }
+                    }
+
+                }
+            }
         }
     }
 }
