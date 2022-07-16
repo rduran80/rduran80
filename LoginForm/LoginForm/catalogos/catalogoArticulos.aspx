@@ -23,29 +23,22 @@
             &nbsp;<asp:TextBox ID="txtPrecio" runat="server" Width="119px" Height="22px"></asp:TextBox><br />
             <br />
             <asp:Label ID="Label6" runat="server" Text="Fecha ingreso :"></asp:Label>
-            &nbsp;<asp:TextBox ID="txtFechIng" placeholder="yyyy-mm-dd" runat="server" Width="119px" Height="22px"></asp:TextBox><br />
+            &nbsp;<asp:TextBox ID="txtFechIng" placeholder="yyyy-mm-dd" runat="server" Width="119px" Height="22px" TextMode="Date"></asp:TextBox><br />
             <br />
             <asp:Button class="btn" ID="btnIngresar" runat="server" Text="Ingresar" OnClick="btnIngresar_Click" />
             &nbsp;<asp:Button class="btn" ID="btnBorrar" runat="server" Text="Borrar" OnClick="btnBorrar_Click" />
             &nbsp;
                 <asp:Button class="btn" ID="btnActualizar" runat="server" Text="Actualizar" OnClick="btnActualizar_Click" />
+            &nbsp;&nbsp;
+            <asp:Button class="btn" ID="btnBuscar" runat="server" Text="Buscar" OnClick="Button1_Click" />
             <br />
-        </div>
+        &nbsp;</div>
         <br />
     </div>
     <br />
     <br />
     <div class="div div-user">
-        <asp:GridView runat="server" AutoGenerateColumns="False" DataSourceID="SqlMantenimiento" Height="207px" Width="99%">
-            <Columns>
-                <asp:BoundField DataField="codigo" HeaderText="codigo" InsertVisible="False" ReadOnly="True" SortExpression="codigo" />
-                <asp:BoundField DataField="descripcion" HeaderText="descripcion" SortExpression="descripcion" />
-                <asp:BoundField DataField="cantidad" HeaderText="cantidad" SortExpression="cantidad" />
-                <asp:BoundField DataField="precio" HeaderText="precio" SortExpression="precio" />
-                <asp:BoundField DataField="fechaIngreso" HeaderText="fechaIngreso" SortExpression="fechaIngreso" />
-            </Columns>
-        </asp:GridView>
-        <asp:SqlDataSource ID="SqlMantenimiento" runat="server" ConnectionString="<%$ ConnectionStrings:UPIConnectionString %>" SelectCommand="SELECT * FROM [articulos]"></asp:SqlDataSource>
+        <asp:GridView Class="grid-item" ID="GridView" runat="server" ></asp:GridView>
     </div>
     <br />
 </asp:Content>

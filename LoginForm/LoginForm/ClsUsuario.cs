@@ -12,6 +12,8 @@ namespace LoginForm
         private static string clave { get; set; }
 
         //constructor
+        public ClsUsuario(){}
+
         public ClsUsuario(string nom, string contrasena)
         {
             nombre = nom;

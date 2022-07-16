@@ -18,23 +18,16 @@
             <asp:TextBox type="password" ID="txtClave" runat="server" Height="22px" Width="119px"></asp:TextBox><br /><br />
             <asp:Label ID="lblError" runat="server" Text=""></asp:Label><br />
             <br />
-            <asp:Button class="btn" ID="btnIngresar" runat="server" Text="Ingresar" />
+            <asp:Button class="btn" ID="btnIngresar" runat="server" Text="Ingresar"/>
             &nbsp;<asp:Button class="btn" ID="btnBorrar" runat="server" Text="Borrar" />
             &nbsp;
                 <asp:Button class="btn" ID="btnActualizar" runat="server" Text="Actualizar" />
             <br />
         </div>
         <br />
-        <div class="div div-login">
+        <div class="div div-user">
             <br />
-            <asp:GridView runat="server" AutoGenerateColumns="False" DataSourceID="SqlUPI" Height="256px" Width="93%">
-                <Columns>
-                    <asp:BoundField DataField="codigo" HeaderText="codigo" InsertVisible="False" ReadOnly="True" SortExpression="codigo" />
-                    <asp:BoundField DataField="nombre" HeaderText="nombre" SortExpression="nombre" />
-                    <asp:BoundField DataField="clave" HeaderText="clave" SortExpression="clave" />
-                </Columns>
-            </asp:GridView>
-            <asp:SqlDataSource ID="SqlUPI" runat="server" ConnectionString="<%$ ConnectionStrings:UPIConnectionString2 %>" SelectCommand="SELECT * FROM [usuario]"></asp:SqlDataSource>
+            <asp:GridView Class="grid-item grid-container" ID="GridView1" runat="server" Width="90%"></asp:GridView>
             <br />
         </div>
         <br />

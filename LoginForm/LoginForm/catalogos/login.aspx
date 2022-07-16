@@ -19,7 +19,6 @@
             <asp:Label  ID="Label2" runat="server" Text="Clave"></asp:Label>
             &nbsp;&nbsp;&nbsp;
             <asp:TextBox type="password" ID="txtClave" runat="server"></asp:TextBox><br />
-                <asp:Label  ID="lblError" runat="server" Text=""></asp:Label>
                 <br />
                 <asp:Button class="btn" ID="btnIngresar" runat="server" Text="Ingresar" OnClick="btnIngresar_Click"/>
             </div>
