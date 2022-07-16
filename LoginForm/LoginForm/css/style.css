@@ -29,8 +29,15 @@ div{
 	width: 50%;
 	margin: 0 auto;
 	font-size:20px;
+}
 
-
+.div-user {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 20px;
+	border-color: coral;
+	background-color: rgb(51,159,255);
+	border-radius: 20px 20px 20px 20px;
 }
 
 .btn {
@@ -43,6 +50,11 @@ div{
 .btn:hover{
 	color: #fff;
     background-color: #5a6268;
+}
+
+.label{
+	font-size: 20px;
+	color: red;
 }
 
 footer {

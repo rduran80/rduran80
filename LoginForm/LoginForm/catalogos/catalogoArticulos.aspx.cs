@@ -13,5 +13,20 @@ namespace LoginForm
         {
 
         }
+
+        protected void btnIngresar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnBorrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnActualizar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

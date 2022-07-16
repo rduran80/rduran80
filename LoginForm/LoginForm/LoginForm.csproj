@@ -107,6 +107,8 @@
     <Compile Include="catalogos\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ClsArticulo.cs" />
+    <Compile Include="ClsUsuario.cs" />
     <Compile Include="menuPrincipal.Master.cs">
       <DependentUpon>menuPrincipal.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
