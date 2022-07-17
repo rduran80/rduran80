@@ -59,5 +59,21 @@ namespace LoginForm
         {
             fechaIngreso = FechaIngreso;
         }
+
+        public static void SPLlenargrid(DataTable) 
+        {
+
+            string constr = ConfigurationManager.ConnectionStrings["UPIConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(constr);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("ConsultaArticulo", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            //GridView1.DataSource = dt;
+            //GridView1.DataBind();
+        }
+
     }
 }

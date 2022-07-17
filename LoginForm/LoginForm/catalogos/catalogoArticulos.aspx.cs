@@ -12,30 +12,14 @@ namespace LoginForm
 {
     public partial class catalogoArticulos : System.Web.UI.Page
     {
+        DataTable dt = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!this.IsPostBack)
             {
-                string constr = ConfigurationManager.ConnectionStrings["UPIConnectionString2"].ConnectionString;
-                string query = "select * from articulos";
-                using (SqlConnection con = new SqlConnection(constr))
-                {
-                    using (SqlCommand cmd = new SqlCommand(query))
-                    {
-                        using (SqlDataAdapter sda = new SqlDataAdapter())
-                        {
-                            cmd.Connection = con;
-                            sda.SelectCommand = cmd;
-                            using (DataSet ds = new DataSet())
-                            {
-                                sda.Fill(ds);
-                                GridView1.DataSource = ds.Tables[0];
-                                GridView1.DataBind();
-                            }
-                        }
-
-                    }
-                }
+                ClsArticulo.SPLlenargrid(dt);
+                GridView1.DataSource = dt;
+                GridView1.DataBind();
             }
         }
 
@@ -46,6 +30,7 @@ namespace LoginForm
             txtCantidad.Text = "";
             txtPrecio.Text = "";
             txtFechIng.Text = "";
+
         }
 
         protected void btnBorrar_Click(object sender, EventArgs e)
@@ -66,26 +51,36 @@ namespace LoginForm
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string constr = ConfigurationManager.ConnectionStrings["UPIConnectionString2"].ConnectionString;
-            string query = $"select * from articulos where codigo = '{txtCodigo.Text}'";
-            using (SqlConnection con = new SqlConnection(constr))
+            try
             {
-                using (SqlCommand cmd = new SqlCommand(query))
+                string constr = ConfigurationManager.ConnectionStrings["UPIConnectionString2"].ConnectionString;
+                string query = $"select * from articulos where codigo = '{txtCodigo.Text}'";
+                using (SqlConnection con = new SqlConnection(constr))
                 {
-                    using (SqlDataAdapter sda = new SqlDataAdapter())
+                    using (SqlCommand cmd = new SqlCommand(query))
                     {
-                        cmd.Connection = con;
-                        sda.SelectCommand = cmd;
-                        using (DataSet ds = new DataSet())
-                        {sda.Fill(ds);
-                            GridView1.DataSource = ds.Tables[0];
-                            GridView1.DataBind();
+                        using (SqlDataAdapter sda = new SqlDataAdapter())
+                        {
+                            cmd.Connection = con;
+                            sda.SelectCommand = cmd;
+                            using (DataSet ds = new DataSet())
+                            {
+                                sda.Fill(ds);
+                                GridView1.DataSource = ds.Tables[0];
+                                GridView1.DataBind();
+                            }
                         }
-                    }
 
+                    }
                 }
+                txtCodigo.Text = "";
             }
-            txtCodigo.Text = "";
+            catch (Exception)
+            {
+
+                Response.Write("<script>alert('Articulo no existe');</script>");
+            }
+
         }
     }
 }
