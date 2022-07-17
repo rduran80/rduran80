@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="div">
+    <div class="div div-user">
         <h1>&nbsp;Principal</h1>
-        <img src="images/fondoAzul3.jpg" class="auto-style1" alt="Pagina" />
+        <img src="/images/fondoAzul3.jpg" class="auto-style1" alt="Pagina" />
     </div>
 </asp:Content>

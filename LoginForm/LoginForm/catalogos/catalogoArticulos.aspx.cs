@@ -29,8 +29,8 @@ namespace LoginForm
                             using (DataSet ds = new DataSet())
                             {
                                 sda.Fill(ds);
-                                //GridView1.DataSource = ds.Tables[0];
-                                //GridView1.DataBind();
+                                GridView1.DataSource = ds.Tables[0];
+                                GridView1.DataBind();
                             }
                         }
 
@@ -78,8 +78,8 @@ namespace LoginForm
                         sda.SelectCommand = cmd;
                         using (DataSet ds = new DataSet())
                         {sda.Fill(ds);
-                            //GridView1.DataSource = ds.Tables[0];
-                            //GridView1.DataBind();
+                            GridView1.DataSource = ds.Tables[0];
+                            GridView1.DataBind();
                         }
                     }
 
