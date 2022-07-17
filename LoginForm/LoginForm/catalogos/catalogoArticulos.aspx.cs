@@ -29,8 +29,8 @@ namespace LoginForm
                             using (DataSet ds = new DataSet())
                             {
                                 sda.Fill(ds);
-                                //GridView.DataSource = ds.Tables[0];
-                                //GridView.DataBind();
+                                //GridView1.DataSource = ds.Tables[0];
+                                //GridView1.DataBind();
                             }
                         }
 
@@ -66,7 +66,7 @@ namespace LoginForm
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string constr = ConfigurationManager.ConnectionStrings["UPIConnectionString"].ConnectionString;
+            string constr = ConfigurationManager.ConnectionStrings["UPIConnectionString2"].ConnectionString;
             string query = $"select * from articulos where codigo = '{txtCodigo.Text}'";
             using (SqlConnection con = new SqlConnection(constr))
             {
@@ -78,6 +78,8 @@ namespace LoginForm
                         sda.SelectCommand = cmd;
                         using (DataSet ds = new DataSet())
                         {sda.Fill(ds);
+                            //GridView1.DataSource = ds.Tables[0];
+                            //GridView1.DataBind();
                         }
                     }
 

@@ -26,7 +26,7 @@
         <br />
         <div class="div div-user">
             <br />
-            <asp:GridView Class="grid-item grid-container" ID="GridView1" runat="server" Width="90%" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
+            <asp:GridView Class="grid-item" ID="GridView1" runat="server" Width="90%" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
                 <Columns>
                     <asp:BoundField DataField="codigo" HeaderText="codigo" InsertVisible="False" ReadOnly="True" SortExpression="codigo" />
                     <asp:BoundField DataField="nombre" HeaderText="nombre" SortExpression="nombre" />
