@@ -38,16 +38,20 @@
     <br />
     <br />
     <div class="div div-user">
-        <asp:GridView Class="grid-item" ID="GridView" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" >
-            <Columns>
-                <asp:BoundField DataField="codigo" HeaderText="codigo" InsertVisible="False" ReadOnly="True" SortExpression="codigo" />
-                <asp:BoundField DataField="descripcion" HeaderText="descripcion" SortExpression="descripcion" />
-                <asp:BoundField DataField="cantidad" HeaderText="cantidad" SortExpression="cantidad" />
-                <asp:BoundField DataField="precio" HeaderText="precio" SortExpression="precio" />
-                <asp:BoundField DataField="fechaIngreso" HeaderText="fechaIngreso" SortExpression="fechaIngreso" />
-            </Columns>
+        <asp:GridView CssClass="grid-item" ID="GridView1" runat="server" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
+            <AlternatingRowStyle BackColor="White" />
+            <EditRowStyle BackColor="#2461BF" />
+            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+            <RowStyle BackColor="#EFF3FB" />
+            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+            <SortedAscendingCellStyle BackColor="#F5F7FB" />
+            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+            <SortedDescendingCellStyle BackColor="#E9EBEF" />
+            <SortedDescendingHeaderStyle BackColor="#4870BE" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UPIConnectionString %>" DeleteCommand="DELETE FROM usuario WHERE (codigo = @codigo)" InsertCommand="insert into articulos values(@descripcion,@cantidad,@precio,@fechaIngreso)" SelectCommand="SELECT * FROM [articulos]" UpdateCommand="update articulos set descripcion =@descripcion, cantidad = @cantidad, precio = @precio, fechaIngreso = @fechaIng where codigo = @codigo ">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UPIConnectionString %>" DeleteCommand="DELETE FROM usuario WHERE (codigo = @codigo)" InsertCommand="insert into articulos values(@descripcion,@cantidad,@precio,@fechaIngreso)" SelectCommand="SELECT * FROM [articulos]" UpdateCommand="update articulos set descripcion =@descripcion, cantidad = @cantidad, precio = @precio, fechaIngreso = @fechaIng where codigo = @codigo">
             <DeleteParameters>
                 <asp:ControlParameter ControlID="txtCodigo" Name="codigo" PropertyName="Text" />
             </DeleteParameters>
@@ -62,6 +66,7 @@
                 <asp:ControlParameter ControlID="txtCantidad" Name="cantidad" PropertyName="Text" />
                 <asp:ControlParameter ControlID="txtPrecio" Name="precio" PropertyName="Text" />
                 <asp:ControlParameter ControlID="txtFechIng" Name="fechaIng" PropertyName="Text" />
+                <asp:ControlParameter ControlID="txtCodigo" Name="codigo" PropertyName="Text" />
             </UpdateParameters>
         </asp:SqlDataSource>
     </div>

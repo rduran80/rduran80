@@ -59,30 +59,5 @@ namespace LoginForm
         {
             fechaIngreso = FechaIngreso;
         }
-
-        public static void SelectWithParams() 
-        {
-            string constr = ConfigurationManager.ConnectionStrings["UPIConnectionString2"].ConnectionString;
-            string query = "select * from articulos where codigo = @codigo";
-            using (SqlConnection con = new SqlConnection(constr))
-            {
-                using (SqlCommand cmd = new SqlCommand(query))
-                {
-                    using (SqlDataAdapter sda = new SqlDataAdapter())
-                    {
-                        cmd.Connection = con;
-                        sda.SelectCommand = cmd;
-                        using (DataSet ds = new DataSet())
-                        {
-                            sda.Fill(ds);
-                            //GridView.DataSource = ds.Tables[0];
-                            //GridView.DataBind();
-
-                        }
-                    }
-
-                }
-            }
-        }
     }
 }

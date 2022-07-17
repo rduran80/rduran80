@@ -29,8 +29,8 @@ namespace LoginForm
                             using (DataSet ds = new DataSet()) 
                             {
                                 sda.Fill(ds);
-                                GridView1.DataSource = ds.Tables[0];
-                                GridView1.DataBind();
+                                //GridView1.DataSource = ds.Tables[0];
+                                //GridView1.DataBind();
                             }
                         }
 
@@ -39,5 +39,25 @@ namespace LoginForm
             }
         }
 
+        protected void btnIngresar_Click(object sender, EventArgs e)
+        {
+            SqlDataSource1.Insert();
+            txtClave.Text = "";
+            txtNombre.Text = "";
+        }
+
+        protected void btnBorrar_Click(object sender, EventArgs e)
+        {
+            SqlDataSource1.Delete();
+            txtCodigo.Text = "";
+        }
+
+        protected void btnActualizar_Click(object sender, EventArgs e)
+        {
+            SqlDataSource1.Update();
+            txtCodigo.Text = "";
+            txtClave.Text = "";
+            txtNombre.Text = "";
+        }
     }
 }
