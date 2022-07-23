@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mainMaster.master.cs" Inherits="Examen2RoyDuran.mainMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Servicios en linea</title>
+    <link href="css/main.css" rel="stylesheet" type:"text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div>
+                <nav>
+                    <h1>Pago servicios</h1>
+                </nav>
+            </div>
+
+            <div class="icon-bar">
+                <a class="active" href="factura.aspx">
+                    <img src="images/cable.jpg" class="icon" /></a><br />
+                <a class="active" href="factura.aspx">
+                    <img src="images/agua.jpg" class="icon" /></a><br />
+                <a class="active" href="#">
+                    <img src="images/electricidad.jpg" class="icon" /></a><br />
+                <a class="active" href="#">
+                    <img src="images/telefono.jpg" class="icon" /></a><br />
+            </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <footer><p>Professional Web Design &copy 2022</p></footer>
+            
+        </div>
+    </form>
+</body>
+</html>

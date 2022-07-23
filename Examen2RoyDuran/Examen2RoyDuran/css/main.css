@@ -1,0 +1,65 @@
+﻿body {
+    margin: 0;
+    background-image: url('../images/download.jpg');
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+.icon-bar {
+    width: 90px;
+    height: 0px;
+    background-color: #555;
+}
+
+    .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 36px;
+    }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+.active {
+    background-color: #04AA6D;
+}
+
+fieldset {
+    margin-left: 100px ;
+    margin-top: 0px;
+}
+
+.btn {
+    margin: 10px;
+    background-color: #4A87E8;
+    border-radius:10px;
+}
+
+.form-inicio {
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #fff;
+}
