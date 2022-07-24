@@ -51,6 +51,7 @@ namespace Examen2RoyDuran
         protected void btnSalvar_Click(object sender, EventArgs e)
         {
             ClsCliente.guardarCliente();
+
         }
     }
 }

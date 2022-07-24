@@ -140,5 +140,14 @@ namespace Examen2RoyDuran
             }
 
         }
+
+        public static void validarDatos(string nom, string ced, string tel, string dir)
+        {
+            string cadena;
+            if (nom == "" || ced == "" || tel == "" || dir == "")
+            {
+                cadena = "<script>alert('El campo Direccion no puede estar vacio');</script>";
+            }
+        }
     }
 }

@@ -17,14 +17,20 @@ namespace Examen2RoyDuran
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            
-            ClsCliente.GetNombre();
-            ClsCliente.GetCedula();
-            ClsCliente.GetTelefono();
-            ClsCliente.GetDireccion();
-            ClsCliente.SetServicio("Cable");
-            Response.Redirect("factura.aspx");
-            
+            try
+            {
+                ClsCliente.GetNombre();
+                ClsCliente.GetCedula();
+                ClsCliente.GetTelefono();
+                ClsCliente.GetDireccion();
+                ClsCliente.SetServicio("Cable");
+                Response.Redirect("factura.aspx");
+            }
+            catch (Exception)
+            {
+
+                Response.Write("<script>alert('No peden haber es datos vacios');</script>");
+            }
         }
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)

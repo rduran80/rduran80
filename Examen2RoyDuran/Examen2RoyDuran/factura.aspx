@@ -6,13 +6,13 @@
     <div>
         <fieldset>
             <legend>Factura </legend>
-            Codigo Factura&nbsp;&nbsp; <asp:Label ID="lblFactura" runat="server" Text=""></asp:Label>
+            Codigo Factura&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <asp:Label ID="lblFactura" runat="server" Text="" ></asp:Label>
             <br />
             <br />
-            Codigo Servicio <asp:Label ID="lblServicio" runat="server" Text=""></asp:Label>
+            Codigo Servicio&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="lblServicio" runat="server" Text=""></asp:Label>
             <br />
             <br />
-            Mes;
+            Mes;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="drdMes" runat="server">
                 <asp:ListItem>Enero</asp:ListItem>
                 <asp:ListItem>Febrero</asp:ListItem>
@@ -27,10 +27,11 @@
                 <asp:ListItem>Noviembre</asp:ListItem>
                 <asp:ListItem>Diciembre</asp:ListItem>
             </asp:DropDownList>
-            &nbsp;<asp:Label ID="lblMes" runat="server" Text=""></asp:Label>
+            &nbsp;<asp:Label ID="lblMes" runat="server" Visible="False"></asp:Label>
             <br />
             <br />
             Monto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="txtMonto" runat="server"></asp:TextBox>
+            <br />
             <br />
             Descuento&nbsp;  <asp:TextBox ID="txtDesc" runat="server"></asp:TextBox>
             <br /><br />

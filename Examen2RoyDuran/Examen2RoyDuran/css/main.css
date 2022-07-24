@@ -68,3 +68,8 @@ footer {
     text-align:center;
     background-position-y: center;
 }
+
+#lblFactura, #lblServicio {
+    color: black;
+    background-color: white;
+}
