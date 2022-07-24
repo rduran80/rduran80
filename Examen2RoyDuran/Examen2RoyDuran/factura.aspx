@@ -6,10 +6,10 @@
     <div>
         <fieldset>
             <legend>Factura </legend>
-            Codigo Factura&nbsp;&nbsp; <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            Codigo Factura&nbsp;&nbsp; <asp:Label ID="lblFactura" runat="server" Text=""></asp:Label>
             <br />
             <br />
-            Codigo Servicio <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+            Codigo Servicio <asp:Label ID="lblServicio" runat="server" Text=""></asp:Label>
             <br />
             <br />
             Mes;
@@ -29,16 +29,16 @@
             </asp:DropDownList>
             <br />
             <br />
-            Monto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+            Monto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="txtMonto" runat="server"></asp:TextBox>
             <br />
-            Descuento&nbsp;  <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
+            Descuento&nbsp;  <asp:TextBox ID="txtDesc" runat="server"></asp:TextBox>
             <br /><br />
-            <asp:Button Class="btn" ID="btnAgregar" runat="server" Text="Agregar" />
+            <asp:Button Class="btn" ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
             <asp:Button Class="btn" ID="btnSalvar" runat="server" Text="Salvar" />
             <asp:Button Class="btn" ID="btnVolver" runat="server" Text="Volver" OnClick="btnVolver_Click" /><br /><br />
         </fieldset>
         <fieldset>
-            <legend>Clienteeeeeeeeeeeeeeeegend>Cliente</legend>
+            <legend>Cliente</legend>
             Nombre:&nbsp;&nbsp;&nbsp;&nbsp;  <asp:TextBox ID="txtNombreCliente" runat="server"></asp:TextBox>
             <br />
             <br />
@@ -58,15 +58,15 @@
             <br />
             Monto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Descuento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Subtotal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; IVA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Total&nbsp;&nbsp;&nbsp;
             <hr />
-            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtMonto2" runat="server"></asp:TextBox>
             &nbsp;
-            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtDesc2" runat="server"></asp:TextBox>
             &nbsp;
-            <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtSubtotal" runat="server"></asp:TextBox>
             &nbsp;
-            <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtIva" runat="server"></asp:TextBox>
             &nbsp;
-            <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtTotal" runat="server"></asp:TextBox>
             <br />
         </fieldset>
     </div>

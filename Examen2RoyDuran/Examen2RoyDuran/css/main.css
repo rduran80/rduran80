@@ -36,7 +36,7 @@ h1{
 }
 
 fieldset {
-    margin-left: 100px ;
+    margin-left: 100px;
     margin-top: 0px;
 }
 
@@ -47,7 +47,7 @@ fieldset {
 }
 
 .form-inicio {
-    margin-left: 100px;
+    margin-left: 0px;
     margin-top: 0px;
 }
 
@@ -62,4 +62,9 @@ footer {
     padding-top: 10px;
     padding-left: 10px;
     color: #fff;
+}
+
+.form-inicio {
+    text-align:center;
+    background-position-y: center;
 }

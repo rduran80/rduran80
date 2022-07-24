@@ -3,9 +3,19 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="form-inicio">
-        Nombre:&nbsp;&nbsp;&nbsp; <asp:TextBox id="txtNombre" runat="server"></asp:TextBox><br /><br />
-        Cedula:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox id="txtCedula" runat="server"></asp:TextBox><br /><br />
-        Telefono:&nbsp;&nbsp; <asp:TextBox id="txtTelefono" runat="server"></asp:TextBox><br /><br />
-        Direccion: <asp:TextBox id="txtDireccion" runat="server"></asp:TextBox><br /><br />
+        <fieldset class="fieldset">
+            Nombre:&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtNombre" runat="server" ></asp:TextBox><br />
+            <br />
+            Cedula:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtCedula" runat="server"></asp:TextBox><br />
+            <br />
+            Telefono:&nbsp;&nbsp;
+            <asp:TextBox ID="txtTelefono" runat="server"></asp:TextBox><br />
+            <br />
+            Direccion:
+            <asp:TextBox ID="txtDireccion" runat="server"></asp:TextBox><br />
+            <br />
+        </fieldset>
     </div>
 </asp:Content>

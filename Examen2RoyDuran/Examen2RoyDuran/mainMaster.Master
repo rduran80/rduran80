@@ -20,14 +20,11 @@
             </div>
 
             <div class="icon-bar">
-                <a class="active" href="factura.aspx">
-                    <img src="images/cable.jpg" class="icon" /></a><br />
-                <a class="active" href="factura.aspx">
-                    <img src="images/agua.jpg" class="icon" /></a><br />
-                <a class="active" href="#">
-                    <img src="images/electricidad.jpg" class="icon" /></a><br />
-                <a class="active" href="#">
-                    <img src="images/telefono.jpg" class="icon" /></a><br />
+                
+                <a href="factura.aspx"><asp:ImageButton  class="icon active" src="images/cable.jpg" ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" /></a><br />
+                <a href="factura.aspx"><asp:ImageButton  class="icon active" src="images/agua.jpg" ID="ImageButton2" runat="server" /></a><br />
+                <a href="factura.aspx"><asp:ImageButton  class="icon active" src="images/electricidad.jpg" ID="ImageButton3" runat="server" /></a><br />
+                <a href="factura.aspx"><asp:ImageButton  class="icon active" src="images/telefono.jpg" ID="ImageButton4" runat="server" /></a><br />
             </div>
 
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -35,7 +32,6 @@
         </div>
         <div>
             <footer><p>Professional Web Design &copy 2022</p></footer>
-            
         </div>
     </form>
 </body>

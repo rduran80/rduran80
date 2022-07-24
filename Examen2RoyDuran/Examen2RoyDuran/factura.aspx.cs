@@ -13,16 +13,30 @@ namespace Examen2RoyDuran
         ClsCliente cliente = new ClsCliente();
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtNombreCliente.Text = cliente.GetNombre();
-            txtCedulaCliente.Text = cliente.GetCedula();
-            txtTelefonoCliente.Text = cliente.GetTelefono();
-            txtDireccionCliente.Text = cliente.GetDireccion();
-            numFactura = cliente.GetFactura() + 1 ;
+            if (!IsPostBack)
+            {
+                txtNombreCliente.Text = ClsCliente.GetNombre();
+                txtCedulaCliente.Text = ClsCliente.GetCedula();
+                txtTelefonoCliente.Text = ClsCliente.GetTelefono();
+                txtDireccionCliente.Text = ClsCliente.GetDireccion();
+                numFactura++;
+                lblFactura.Text = (numFactura).ToString();
+                lblServicio.Text = ClsCliente.GetServicio();
+
+            }
+
+
         }
 
         protected void btnVolver_Click(object sender, EventArgs e)
         {
             Response.Redirect("inicio.aspx");
+        }
+
+        protected void btnAgregar_Click(object sender, EventArgs e)
+        {
+            txtMonto2.Text = txtMonto.Text;
+            float descuent = float.Parse(txtDesc.Text);
         }
     }
 }
