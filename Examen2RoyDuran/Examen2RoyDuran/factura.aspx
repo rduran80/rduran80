@@ -30,10 +30,10 @@
             &nbsp;<asp:Label ID="lblMes" runat="server" Visible="False"></asp:Label>
             <br />
             <br />
-            Monto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="txtMonto" runat="server"></asp:TextBox>
+            Monto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="txtMonto" runat="server" required="true"></asp:TextBox>
             <br />
             <br />
-            Descuento&nbsp;  <asp:TextBox ID="txtDesc" runat="server"></asp:TextBox>
+            Descuento&nbsp;  <asp:TextBox ID="txtDesc" runat="server" required="true"></asp:TextBox>
             <br /><br />
             <asp:Button Class="btn" ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
             <asp:Button Class="btn" ID="btnSalvar" runat="server" Text="Salvar" OnClick="btnSalvar_Click" />

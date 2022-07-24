@@ -1,6 +1,8 @@
 create database EXAMEN2_DB
 use EXAMEN2_DB
 
+drop table Cliente
+
 create table Cliente
 (
 	id int identity(1,1),

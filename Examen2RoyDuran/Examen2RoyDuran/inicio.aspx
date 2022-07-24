@@ -8,13 +8,13 @@
             <asp:TextBox ID="txtNombre" runat="server" required="true"></asp:TextBox><br />
             <br />
             Cedula:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtCedula" runat="server"></asp:TextBox><br />
+            <asp:TextBox ID="txtCedula" runat="server" required="true"></asp:TextBox><br />
             <br />
             Telefono:&nbsp;&nbsp;
-            <asp:TextBox ID="txtTelefono" runat="server"></asp:TextBox><br />
+            <asp:TextBox ID="txtTelefono" runat="server" required="true"></asp:TextBox><br />
             <br />
             Direccion:
-            <asp:TextBox ID="txtDireccion" runat="server"></asp:TextBox><br />
+            <asp:TextBox ID="txtDireccion" runat="server" required="true"></asp:TextBox><br />
             <br />
         </fieldset>
     </div>

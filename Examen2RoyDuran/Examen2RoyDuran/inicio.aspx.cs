@@ -16,6 +16,7 @@ namespace Examen2RoyDuran
             ClsCliente.SetCedula(txtCedula.Text);
             ClsCliente.SetTelefono(txtTelefono.Text);
             ClsCliente.SetDireccion(txtDireccion.Text);
+            ClsCliente.GetFactura();
         }
     }
 }

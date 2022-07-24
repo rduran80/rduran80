@@ -15,15 +15,16 @@ namespace Examen2RoyDuran
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            lblFactura.Text = (numFactura).ToString();
             if (!IsPostBack)
             {
                 txtNombreCliente.Text = ClsCliente.GetNombre();
                 txtCedulaCliente.Text = ClsCliente.GetCedula();
                 txtTelefonoCliente.Text = ClsCliente.GetTelefono();
                 txtDireccionCliente.Text = ClsCliente.GetDireccion();
-                lblFactura.Text = (numFactura).ToString();
                 lblServicio.Text = ClsCliente.GetServicio();
                 lblMes.Text = drdMes.SelectedValue;
+                ClsCliente.SetFactura(int.Parse(lblFactura.Text));
             }
         }
 
@@ -34,6 +35,7 @@ namespace Examen2RoyDuran
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
+            
             ClsCliente.SetMes(lblMes.Text);
             txtMonto2.Text = txtMonto.Text;
             float descuent = float.Parse(txtDesc.Text);
@@ -50,7 +52,7 @@ namespace Examen2RoyDuran
         protected void btnSalvar_Click(object sender, EventArgs e)
         {
             ClsCliente.guardarCliente();
-            numFactura += 1;
+            numFactura = int.Parse(lblFactura.Text) + 1;
         }
     }
 }
