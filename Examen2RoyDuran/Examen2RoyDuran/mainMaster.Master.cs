@@ -26,5 +26,35 @@ namespace Examen2RoyDuran
             Response.Redirect("factura.aspx");
             
         }
+
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+            ClsCliente.GetNombre();
+            ClsCliente.GetCedula();
+            ClsCliente.GetTelefono();
+            ClsCliente.GetDireccion();
+            ClsCliente.SetServicio("Agua");
+            Response.Redirect("factura.aspx");
+        }
+
+        protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+        {
+            ClsCliente.GetNombre();
+            ClsCliente.GetCedula();
+            ClsCliente.GetTelefono();
+            ClsCliente.GetDireccion();
+            ClsCliente.SetServicio("Electricidad");
+            Response.Redirect("factura.aspx");
+        }
+
+        protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+        {
+            ClsCliente.GetNombre();
+            ClsCliente.GetCedula();
+            ClsCliente.GetTelefono();
+            ClsCliente.GetDireccion();
+            ClsCliente.SetServicio("Telefonos");
+            Response.Redirect("factura.aspx");
+        }
     }
 }

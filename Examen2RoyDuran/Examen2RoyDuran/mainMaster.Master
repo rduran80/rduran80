@@ -22,9 +22,9 @@
             <div class="icon-bar">
                 
                 <a href="factura.aspx"><asp:ImageButton  class="icon active" src="images/cable.jpg" ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" /></a><br />
-                <a href="factura.aspx"><asp:ImageButton  class="icon active" src="images/agua.jpg" ID="ImageButton2" runat="server" /></a><br />
-                <a href="factura.aspx"><asp:ImageButton  class="icon active" src="images/electricidad.jpg" ID="ImageButton3" runat="server" /></a><br />
-                <a href="factura.aspx"><asp:ImageButton  class="icon active" src="images/telefono.jpg" ID="ImageButton4" runat="server" /></a><br />
+                <a href="factura.aspx"><asp:ImageButton  class="icon active" src="images/agua.jpg" ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" /></a><br />
+                <a href="factura.aspx"><asp:ImageButton  class="icon active" src="images/electricidad.jpg" ID="ImageButton3" runat="server" OnClick="ImageButton3_Click" /></a><br />
+                <a href="factura.aspx"><asp:ImageButton  class="icon active" src="images/telefono.jpg" ID="ImageButton4" runat="server" OnClick="ImageButton4_Click" /></a><br />
             </div>
 
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

@@ -13,7 +13,7 @@
             <br />
             <br />
             Mes;
-            <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:DropDownList ID="drdMes" runat="server">
                 <asp:ListItem>Enero</asp:ListItem>
                 <asp:ListItem>Febrero</asp:ListItem>
                 <asp:ListItem>Marzo</asp:ListItem>
@@ -27,6 +27,7 @@
                 <asp:ListItem>Noviembre</asp:ListItem>
                 <asp:ListItem>Diciembre</asp:ListItem>
             </asp:DropDownList>
+            &nbsp;<asp:Label ID="lblMes" runat="server" Text=""></asp:Label>
             <br />
             <br />
             Monto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="txtMonto" runat="server"></asp:TextBox>
@@ -34,7 +35,7 @@
             Descuento&nbsp;  <asp:TextBox ID="txtDesc" runat="server"></asp:TextBox>
             <br /><br />
             <asp:Button Class="btn" ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
-            <asp:Button Class="btn" ID="btnSalvar" runat="server" Text="Salvar" />
+            <asp:Button Class="btn" ID="btnSalvar" runat="server" Text="Salvar" OnClick="btnSalvar_Click" />
             <asp:Button Class="btn" ID="btnVolver" runat="server" Text="Volver" OnClick="btnVolver_Click" /><br /><br />
         </fieldset>
         <fieldset>
@@ -67,6 +68,8 @@
             <asp:TextBox ID="txtIva" runat="server"></asp:TextBox>
             &nbsp;
             <asp:TextBox ID="txtTotal" runat="server"></asp:TextBox>
+            <br />
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:EXAMEN2_DBConnectionString %>" SelectCommand="SELECT * FROM [Cliente]"></asp:SqlDataSource>
             <br />
         </fieldset>
     </div>

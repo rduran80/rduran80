@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
@@ -105,11 +108,37 @@ namespace Examen2RoyDuran
         }
         public static void SetIva(float subt)
         {
-            iva = subt * float.Parse("0.13");
+            iva = subt * 0.13f;
         }
         public static void SetTotal(float subt,float iva)
         {
             total = subt + iva;
+        }
+
+        public static void guardarCliente() { 
+            using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["EXAMEN2_DBConnectionString"].ConnectionString))
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "insertarCliente";
+                cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = nombre;
+                cmd.Parameters.Add("@cedula", SqlDbType.VarChar).Value = cedula;
+                cmd.Parameters.Add("@telefono", SqlDbType.VarChar).Value = telefono;
+                cmd.Parameters.Add("@direccion", SqlDbType.VarChar).Value = direccion;
+                cmd.Parameters.Add("@servicio", SqlDbType.VarChar).Value = servicio;
+                cmd.Parameters.Add("@factura", SqlDbType.Int).Value = factura;
+                cmd.Parameters.Add("@mes", SqlDbType.VarChar).Value = mes;
+                cmd.Parameters.Add("@monto", SqlDbType.Float).Value = monto;
+                cmd.Parameters.Add("@descuento", SqlDbType.Float).Value = descuento;
+                cmd.Parameters.Add("@subtotal", SqlDbType.Float).Value = subtotal;
+                cmd.Parameters.Add("@iva", SqlDbType.Float).Value = iva;
+                cmd.Parameters.Add("@total", SqlDbType.Float).Value = total;
+
+                cmd.Connection = conn;
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+
         }
     }
 }
