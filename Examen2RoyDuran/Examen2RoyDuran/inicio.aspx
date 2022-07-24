@@ -5,7 +5,7 @@
     <div class="form-inicio">
         <fieldset class="fieldset">
             Nombre:&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtNombre" runat="server" ></asp:TextBox><br />
+            <asp:TextBox ID="txtNombre" runat="server" required="true"></asp:TextBox><br />
             <br />
             Cedula:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtCedula" runat="server"></asp:TextBox><br />

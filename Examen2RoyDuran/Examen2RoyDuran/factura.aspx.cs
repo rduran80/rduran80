@@ -21,7 +21,6 @@ namespace Examen2RoyDuran
                 txtCedulaCliente.Text = ClsCliente.GetCedula();
                 txtTelefonoCliente.Text = ClsCliente.GetTelefono();
                 txtDireccionCliente.Text = ClsCliente.GetDireccion();
-                numFactura++;
                 lblFactura.Text = (numFactura).ToString();
                 lblServicio.Text = ClsCliente.GetServicio();
                 lblMes.Text = drdMes.SelectedValue;
@@ -51,7 +50,7 @@ namespace Examen2RoyDuran
         protected void btnSalvar_Click(object sender, EventArgs e)
         {
             ClsCliente.guardarCliente();
-
+            numFactura += 1;
         }
     }
 }
