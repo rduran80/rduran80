@@ -13,7 +13,7 @@
         <h1>Sistema de control</h1>
             <div class="div div-login">
             <h1>Login</h1>
-            <asp:Label ID="Label1" runat="server" Text="Nombre"></asp:Label>
+                Email:&nbsp;
             <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox><br />
                 <br />
             <asp:Label  ID="Label2" runat="server" Text="Clave"></asp:Label>

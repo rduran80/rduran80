@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="catalogos\ingresos.aspx" />
     <Content Include="catalogos\inicio.aspx" />
     <Content Include="catalogos\personas.aspx" />
     <Content Include="catalogos\usuarios.aspx" />
@@ -77,6 +78,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="catalogos\ingresos.aspx.cs">
+      <DependentUpon>ingresos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catalogos\ingresos.aspx.designer.cs">
+      <DependentUpon>ingresos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="catalogos\inicio.aspx.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -90,6 +98,13 @@
     </Compile>
     <Compile Include="catalogos\personas.aspx.designer.cs">
       <DependentUpon>personas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\regular.Master.cs">
+      <DependentUpon>regular.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catalogos\regular.Master.designer.cs">
+      <DependentUpon>regular.Master</DependentUpon>
     </Compile>
     <Compile Include="catalogos\usuarios.aspx.cs">
       <DependentUpon>usuarios.aspx</DependentUpon>
@@ -105,6 +120,7 @@
     <Compile Include="catalogos\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ClsUsuario.cs" />
     <Compile Include="mainMaster.Master.cs">
       <DependentUpon>mainMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -116,6 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mainMaster.Master" />
+    <Content Include="catalogos\regular.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

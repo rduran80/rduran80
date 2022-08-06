@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="regular.master.cs" Inherits="presupuesto_RoyDuran.catalogos.regular" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="css/main.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="navbar">
+                <a href="login.aspx">Login</a>
+                <a href="inicio.aspx">Inicio</a>
+                <a href="ingresos.aspx">Ingresos</a>
+                <a href="ingresos.aspx">Gastos</a>
+                <a href="reportes.aspx">Reportes</a>
+            </div>
+
+            <div style="padding: 0 16px">
+                <h1>Presupuesto Familiar ingresos y gastos</h1>
+                <hr />
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer>Desarrollo Web Profesional &copy soporte@dewep.co.cr</footer>
+</body>
+</html>

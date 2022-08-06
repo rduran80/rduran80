@@ -19,6 +19,7 @@ namespace presupuesto_RoyDuran.catalogos
             try
             {
                 SqlPrsupuesto.Insert();
+                limpiarCampos();
             }
             catch (Exception)
             {
@@ -31,11 +32,21 @@ namespace presupuesto_RoyDuran.catalogos
         protected void Button3_Click(object sender, EventArgs e)
         {
             SqlPrsupuesto.Delete();
+            limpiarCampos();
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
             SqlPrsupuesto.Update();
+            limpiarCampos();
         }
+
+        protected void limpiarCampos()
+        {
+            txtClave.Text = "";
+            txtMail.Text = "";
+            txtIdpersona.Text = "";
+        }
+
     }
 }
