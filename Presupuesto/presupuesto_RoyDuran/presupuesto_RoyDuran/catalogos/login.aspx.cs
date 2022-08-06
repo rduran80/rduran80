@@ -26,7 +26,7 @@ namespace presupuesto_RoyDuran
             if (registro.Read())
             {
                 
-                Response.Redirect("usuarios.aspx");
+                Response.Redirect("ingresos.aspx");
             }
             else
             {

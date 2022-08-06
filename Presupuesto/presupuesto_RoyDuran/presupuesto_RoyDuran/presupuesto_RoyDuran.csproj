@@ -70,6 +70,7 @@
     <Content Include="catalogos\ingresos.aspx" />
     <Content Include="catalogos\inicio.aspx" />
     <Content Include="catalogos\personas.aspx" />
+    <Content Include="catalogos\reportes.aspx" />
     <Content Include="catalogos\usuarios.aspx" />
     <Content Include="css\main.css" />
     <Content Include="catalogos\login.aspx" />
@@ -105,6 +106,13 @@
     </Compile>
     <Compile Include="catalogos\regular.Master.designer.cs">
       <DependentUpon>regular.Master</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\reportes.aspx.cs">
+      <DependentUpon>reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catalogos\reportes.aspx.designer.cs">
+      <DependentUpon>reportes.aspx</DependentUpon>
     </Compile>
     <Compile Include="catalogos\usuarios.aspx.cs">
       <DependentUpon>usuarios.aspx</DependentUpon>
