@@ -39,7 +39,7 @@ GridView{
 }
 
 .div-inicio-personas {
-    height: 500px;
+    height: 417px;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
@@ -121,10 +121,12 @@ GridView{
 }
 
 footer {
-    color: blue;
-    font-size: 25px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    background: #111;
+    height: auto;
     width: 100%;
-    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #fff;
 }

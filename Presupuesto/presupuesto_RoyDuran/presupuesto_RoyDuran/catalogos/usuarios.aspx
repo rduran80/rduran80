@@ -3,25 +3,31 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Usuarios</h1>
-<div class="div-inicio">
-    <div>
-        Email:&nbsp; <asp:TextBox ID="txtMail" runat="server" Height="24px" Width="183px" required="true" ></asp:TextBox><br /><br />
-        ID Usuario:<asp:TextBox ID="txtIdpersona" runat="server" Height="25px" required="true"></asp:TextBox><br /><br />
-        Tipo Usuario:<asp:DropDownList ID="drdTipoUsuario" runat="server" DataSourceID="SqlPrsupuesto" DataTextField="tipo_usuario" DataValueField="tipo_usuario" Height="25px" Width="155px">
-            <asp:ListItem>Admin</asp:ListItem>
-            <asp:ListItem>Regular</asp:ListItem>
-        </asp:DropDownList>
-        <br /><br />
-        Clave:&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtClave" runat="server" Width="167px" required="true"></asp:TextBox><br /><br />
+    <div class="div-inicio">
+        <div>
+            Email:&nbsp;
+            <asp:TextBox ID="txtMail" runat="server" Height="24px" Width="183px" required="true"></asp:TextBox><br />
+            <br />
+            ID Usuario:<asp:TextBox ID="txtIdpersona" runat="server" Height="25px"></asp:TextBox><br />
+            <br />
+            Tipo Usuario:<asp:DropDownList ID="drdTipoUsuario" runat="server" DataSourceID="SqlPrsupuesto" DataTextField="tipo_usuario" DataValueField="tipo_usuario" Height="25px" Width="155px">
+                <asp:ListItem>Admin</asp:ListItem>
+                <asp:ListItem>Regular</asp:ListItem>
+            </asp:DropDownList>
+            <br />
+            <br />
+            Clave:&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtClave" runat="server" Width="167px"></asp:TextBox><br />
+            <br />
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
         <asp:Button class="btn-navbar" ID="Button1" runat="server" Text="Agregar" OnClick="Button1_Click" />
-        &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
         <asp:Button class="btn-navbar" ID="Button2" runat="server" Text="Actualizar" OnClick="Button2_Click" />
-        &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
         <asp:Button class="btn-navbar" ID="Button3" runat="server" Text="Borrar" OnClick="Button3_Click" />
-    </div>
+        </div>
     </div>
     <div class="div-inicio">
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="email" DataSourceID="SqlPrsupuesto" Height="142px" Width="778px">

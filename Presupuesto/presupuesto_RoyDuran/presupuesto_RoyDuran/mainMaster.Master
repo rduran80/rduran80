@@ -16,32 +16,9 @@
         <div>
             <div class="navbar">
                 <a href="inicio.aspx">Inicio</a>
-                <div class="subnav">
-                    <button class="subnavbtn">Usuarios <i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="usuarios.aspx">Ingresar</a>
-                        <a href="personas.aspx">Personas</a>
-                        <a href="#careers">Eliminar</a>
-                    </div>
-                </div>
-                <div class="subnav">
-                    <button class="subnavbtn">Ingresos <i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="#company">Ingresar</a>
-                        <a href="#team">Actualizar</a>
-                        <a href="#careers">Eliminar</a>
-                    </div>
-                </div>
-                <div class="subnav">
-                    <button class="subnavbtn">Gastos <i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="#link1"><asp:Button CssClass="btn-navbar" ID="Button1" runat="server" Text="Ingresar" /></a>
-                        <a href="#company">Ingresar</a>
-                        <a href="#team">Actualizar</a>
-                        <a href="#careers">Eliminar</a>
-                    </div>
-                </div>
-                <a href="#contact">Reportes</a>
+                <a href="personas.aspx">Personas</a>
+                <a href="usuarios.aspx">Usuarios</a>
+                <a href="#careers">Reportes</a>
             </div>
 
             <div style="padding: 0 16px">
