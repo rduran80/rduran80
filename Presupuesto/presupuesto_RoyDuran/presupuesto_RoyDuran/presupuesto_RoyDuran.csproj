@@ -68,8 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="catalogos\inicio.aspx" />
+    <Content Include="catalogos\personas.aspx" />
     <Content Include="catalogos\usuarios.aspx" />
     <Content Include="css\main.css" />
+    <Content Include="catalogos\login.aspx" />
+    <Content Include="css\style.css" />
+    <Content Include="images\fondoAzul2.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -80,12 +84,26 @@
     <Compile Include="catalogos\inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
     </Compile>
+    <Compile Include="catalogos\personas.aspx.cs">
+      <DependentUpon>personas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catalogos\personas.aspx.designer.cs">
+      <DependentUpon>personas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="catalogos\usuarios.aspx.cs">
       <DependentUpon>usuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="catalogos\usuarios.aspx.designer.cs">
       <DependentUpon>usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catalogos\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="mainMaster.Master.cs">
       <DependentUpon>mainMaster.Master</DependentUpon>

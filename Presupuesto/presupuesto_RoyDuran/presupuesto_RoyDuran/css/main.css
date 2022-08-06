@@ -1,6 +1,7 @@
 ﻿body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-image: url('../images/fondoAzul2.jpg');
 }
 
 h1 {
@@ -8,8 +9,12 @@ h1 {
     text-align: center;
     text-shadow: 5px 5px gray;
     font-size: 40px;
-    background-color: darkgray;
     padding:10px;
+}
+
+.form-inicio {
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
 p{
@@ -19,11 +24,28 @@ p{
     background-color: darkgray;
 }
 
+GridView{
+    color: white;
+}
+
 .div-inicio {
     height: 300px;
     width: 50%;
     margin: 0 auto;
-    font-size:;
+    padding: 10px;
+    text-align: center;
+    border: 1px;
+    color: white;
+}
+
+.div-inicio-personas {
+    height: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px;
+    color: white;
+    float: left;
 }
 
 .navbar {

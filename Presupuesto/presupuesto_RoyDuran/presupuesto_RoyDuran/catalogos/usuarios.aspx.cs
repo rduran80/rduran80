@@ -13,5 +13,29 @@ namespace presupuesto_RoyDuran.catalogos
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlPrsupuesto.Insert();
+            }
+            catch (Exception)
+            {
+
+                Response.Write("<script>alert('El E-Mail ya existe en la base de datos');</script>");
+            }
+            
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            SqlPrsupuesto.Delete();
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            SqlPrsupuesto.Update();
+        }
     }
 }

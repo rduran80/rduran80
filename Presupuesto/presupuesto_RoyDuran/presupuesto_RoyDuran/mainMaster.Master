@@ -20,9 +20,9 @@
                     <button class="subnavbtn">Usuarios <i class="fa fa-caret-down"></i></button>
                     <div class="subnav-content">
                         <a href="usuarios.aspx">Ingresar</a>
-                        <a href="#team">Actualizar</a>
+                        <a href="personas.aspx">Personas</a>
                         <a href="#careers">Eliminar</a>
-                    </div>s
+                    </div>
                 </div>
                 <div class="subnav">
                     <button class="subnavbtn">Ingresos <i class="fa fa-caret-down"></i></button>
